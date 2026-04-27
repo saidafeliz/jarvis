@@ -277,7 +277,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         f"📱 Telegram\n📸 Instagram\n📝 Notion\n📅 Calendar\n\n"
         f"Чем я могу помочь?"
     )
-    domain = os.environ.get("RAILWAY_PUBLIC_DOMAIN", "saidaagenda-personal-bot.up.railway.app")
+    domain = os.environ.get("RAILWAY_PUBLIC_DOMAIN", "jarvis-production-acac.up.railway.app")
     finance_url = f"https://{domain}/finance" if not domain.startswith("http") else f"{domain}/finance"
     
     from telegram import WebAppInfo
